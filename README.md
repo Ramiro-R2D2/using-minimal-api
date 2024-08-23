@@ -1,0 +1,1 @@
+The focus of the project is to create an asp.net api for managing car rentals.
