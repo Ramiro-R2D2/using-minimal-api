@@ -9,6 +9,8 @@ namespace using_minimal_api.Models
     {
         VeiculoHibrido(){
             setTipo(TipoVeiculo.hibrido);
+            setCondicao(CondicaoVeiculo.novo);
+            setKm(0);
         }
     }
 }

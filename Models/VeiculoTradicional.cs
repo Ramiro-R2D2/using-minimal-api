@@ -9,6 +9,8 @@ namespace using_minimal_api.Models
     {   
         VeiculoTradicional(){
             setTipo(TipoVeiculo.tradicional);
+            setCondicao(CondicaoVeiculo.novo);
+            setKm(0);
         }
     }
 }

@@ -9,6 +9,8 @@ namespace using_minimal_api.Models
     {
         VeiculoEletrico(){
             setTipo(TipoVeiculo.eletrico);
+            setCondicao(CondicaoVeiculo.novo);
+            setKm(0);
         }
     }
 }

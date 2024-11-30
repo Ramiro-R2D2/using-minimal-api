@@ -1,6 +1,6 @@
 namespace using_minimal_api.Models
 {
-    public enum CondicaoVeiculo
+    public enum CondicaoVeiculoEnum
     {
         novo,semiNovo,usado
     }

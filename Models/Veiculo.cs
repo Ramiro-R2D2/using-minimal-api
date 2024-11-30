@@ -11,11 +11,16 @@ namespace using_minimal_api.Models
         private String? placa { get; set; }
         private String? nome { get; set; }
         private String? marca { get; set; }
-        private CondicaoVeiculo condicao;
+        private CondicaoVeiculoEnum condicao;
         private int kmRodados { get; set; }
-        private TipoVeiculo tipo;
+        private TipoVeiculoEnum tipo;
         private bool alugado = false;
         private decimal preco{get; set;}
+        private int veiculoId{get; set;}
+
+        public void getVeiculoId(int veiculoId){
+            this.veiculoId = veiculoId;
+        } 
         
         public String getNome(){
             return nome;
@@ -32,10 +37,10 @@ namespace using_minimal_api.Models
             this.marca = marca;
         }
 
-        public void setTipo(TipoVeiculo tipo){
+        public void setTipo(TipoVeiculoEnum tipo){
             this.tipo = tipo;
         }
-        public void setCondicao(CondicaoVeiculo condicao){
+        public void setCondicao(CondicaoVeiculoEnum condicao){
             this.condicao = condicao;
         }
 
@@ -54,6 +59,10 @@ namespace using_minimal_api.Models
         }
         public void setKm(int kmRodados){
             this.kmRodados = kmRodados;
+        }
+
+        public String infoVeiculo(){
+            return $"{nome} - marca \n  Placa:{placa} \n Condição:{condicao} \n Tipo:{tipo}";
         }
     }
 }
